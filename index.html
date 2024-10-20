@@ -24,27 +24,27 @@
 
 <body class="font-lexend relative">
   <header class="sticky top-0 z-10 backdrop-blur-3xl ">
-    <nav class="pb-8 border-b">
-      <div class="navbar px-32 flex justify-between bg-lime-300/20">
+    <nav class="pb-2 lg:pb-8 border-b">
+      <div class="navbar lg:px-32 flex justify-between bg-lime-300/20">
 
         <div>
-          <a id="blog-button" class="btn btn-ghost bg-lime-300 text-xl font-bold px-8">Blog</a>
+          <a id="blog-button" class="btn btn-ghost bg-lime-300 lg:text-xl md:font-bold md:px-8">Blog</a>
         </div>
         <div>
-          <img src="assets/logo.png" alt="">
+          <img class="hidden md:block" src="assets/logo.png" alt="">
 
-          <h3 class="text-xl font-bold pl-3">Donate Bangladesh</h3>
+          <h3 class="lg:text-xl md:font-bold pl-3">Donate Bangladesh</h3>
         </div>
         <div class="flex gap-1">
-          <img src="assets/coin.png" alt="">
-          <h3 id="balance" class="text-xl font-bold">5000</h3>
-          <h3 class="text-xl font-bold">BDT</h3>
+          <img  src="assets/coin.png" alt="">
+          <h3 id="balance" class="lg:text-xl md:font-bold">5000</h3>
+          <h3 class="lg:text-xl md:font-bold">BDT</h3>
         </div>
 
       </div>
-      <div class="mt-20 gap-4 flex justify-center">
-        <button id="btn-show-donation" class="btn  bg-lime-300 text-xl font-bold px-8">Donation</button>
-        <button id="btn-show-history" class="btn text-xl font-bold px-8">History</button>
+      <div class="mt-2 lg:mt-20 gap-4 flex justify-center">
+        <button id="btn-show-donation" class="btn  bg-lime-300 lg:text-xl md:font-bold md:px-8">Donation</button>
+        <button id="btn-show-history" class="btn lg:text-xl md:font-bold px-6 md:px-8">History</button>
       </div>
     </nav>
   </header>
@@ -58,11 +58,11 @@
           <div class="hero-content flex-col gap-8 lg:flex-row p-8">
             <img src="assets/noakhali.png" class="w-full rounded-lg shadow-2xl" />
             <div class="flex flex-col gap-4">
-              <button class="btn px-3 max-w-fit">
+              <button class="btn md:px-3 lg:max-w-fit">
                 <img src="assets/coin.png" alt="">
-                <h3 id="balance-noakhali" class="text-lg pl-2 font-normal">1000 BDT</h3>
+                <h3 id="balance-noakhali" class="md:text-lg pl-2 font-normal">1000 BDT</h3>
               </button>
-              <h1 id="title-noakhali" class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+              <h1 id="title-noakhali" class="md:text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
               <p>
                 The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
                 help provide essential supplies and to those affected by this disaster. Every contribution, big or
@@ -73,7 +73,7 @@
               </p>
               <input id="input-donation-noakhali" class="w-full p-4 rounded-lg border" type="text" name=""
                 placeholder="Write Donation Amount">
-              <button id="btn-donation-noakhali" class="btn bg-lime-300 text-xl font-bold px-8 w-full">Donation</button>
+              <button id="btn-donation-noakhali" class="btn bg-lime-300 lg:text-xl font-bold px-8 w-full">Donation</button>
             </div>
           </div>
         </div>
@@ -82,11 +82,11 @@
           <div class="hero-content flex-col gap-8 lg:flex-row p-8">
             <img src="assets/feni.png" class="w-full rounded-lg shadow-2xl" />
             <div class="flex flex-col gap-4">
-              <button class="btn px-3 max-w-fit">
+              <button class="btn px-3 lg:max-w-fit">
                 <img src="assets/coin.png" alt="">
-                <h3 id="balance-feni" class="text-lg pl-2 font-normal">1500 BDT</h3>
+                <h3 id="balance-feni" class="lg:text-lg pl-2 font-normal">1500 BDT</h3>
               </button>
-              <h1 id="title-feni" class="text-3xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
+              <h1 id="title-feni" class="md:text-3xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
               <p>
                 The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
                 generous donation will help provide immediate aid, including food, clean water, and medical supplies, to
@@ -95,7 +95,7 @@
                 donating today to assist those in urgent need.
               </p>
               <input id="input-donation-feni" class="w-full p-4 rounded-lg border" type="text" name=""  placeholder="Write Donation Amount">
-              <button id="btn-donation-feni" class="btn bg-lime-300 text-xl font-bold px-8 w-full">Donation</button>
+              <button id="btn-donation-feni" class="btn bg-lime-300 md:text-xl font-bold px-8 w-full">Donation</button>
             </div>
           </div>
         </div>
@@ -104,11 +104,11 @@
           <div class="hero-content flex-col gap-8 lg:flex-row p-8">
             <img src="assets/quota-protest.png" class="w-full rounded-lg shadow-2xl" />
             <div class="flex flex-col gap-4">
-              <button class="btn px-3 max-w-fit">
+              <button class="btn px-3 lg:max-w-fit">
                 <img src="assets/coin.png" alt="">
-                <h3 id="" class="text-lg pl-2 font-normal">2000 BDT</h3>
+                <h3 id="balance-quota" class="md:text-lg pl-2 font-normal">2000 BDT</h3>
               </button>
-              <h1 class="text-3xl font-bold">Aid for Injured in the Quota Movement</h1>
+              <h1 id="title-quota" class="md:text-3xl font-bold">Aid for Injured in the Quota Movement</h1>
               <p>
                 The recent Quota movement has resulted in numerous injuries and significant hardship for many
                 individuals.
@@ -120,8 +120,8 @@
                 in their recovery. Please consider making a donation to support these brave individuals in their time of
                 need.
               </p>
-              <input class="w-full p-4 rounded-lg border" type="text" name="" id="" placeholder="Write Donation Amount">
-              <button class="btn bg-lime-300 text-xl font-bold px-8 w-full">Donation</button>
+              <input id="input-donation-quota" class="w-full p-4 rounded-lg border" type="text" name="" placeholder="Write Donation Amount">
+              <button id="btn-donation-quota" class="btn bg-lime-300 md:text-xl font-bold px-8 w-full">Donation</button>
             </div>
           </div>
         </div>

@@ -47,13 +47,19 @@ function donationBtnClick(donation,balance,cardBalance,titleChange,cardCurrentBa
         // history
         titleChange.innerText = titleChange.innerText.replace("Donate", "Donated");
         const newTitle = titleChange.innerText;
+        let quota ="";
+                
 
+        if(!titleChange.innerText.includes("Donated")){
+            quota = "Donated for "
+        }
+        
         const newTransaction = document.createElement('p');
         newTransaction.classList.add('border', 'p-8', 'rounded-xl')
         const date = new Date();
         
 
-        newTransaction.innerHTML = `<strong>${donation} Taka is ${newTitle}</strong>
+        newTransaction.innerHTML = `<strong>${donation} Taka is ${quota}${newTitle}</strong>
         <br>
         Date: ${date}`;
         

@@ -25,48 +25,49 @@
 
 <body class="font-lexend relative">
     <header class="sticky top-0 z-10 backdrop-blur-3xl ">
-        <nav>
-            <div class="navbar px-32 flex justify-between bg-lime-300/20">
-
-                <div>
-                    <a id="home-button" class="btn btn-ghost bg-lime-300 text-xl font-bold px-8">Home</a>
-                </div>
-                <div>
-                    <img src="assets/logo.png" alt="">
-
-                    <h3 class="text-xl font-bold pl-3">Donate Bangladesh</h3>
-                </div>
-                <div>
-                    <img src="assets/coin.png" alt="">
-                    <h3 class="text-xl text-gray-600 font-semibold">5000 BDT</h3>
-                </div>
-
+        <nav class="pb-2 lg:pb-8 border-b">
+          <div class="navbar lg:px-32 flex justify-between bg-lime-300/20">
+    
+            <div>
+              <a id="home-button" class="btn btn-ghost bg-lime-300 lg:text-xl md:font-bold md:px-8">Home</a>
             </div>
+            <div>
+              <img class="hidden md:block" src="assets/logo.png" alt="">
+    
+              <h3 class="lg:text-xl md:font-bold pl-3">Donate Bangladesh</h3>
+            </div>
+            <div class="flex gap-1">
+              <img  src="assets/coin.png" alt="">
+              <h3 id="balance" class="lg:text-xl md:font-bold">5000</h3>
+              <h3 class="lg:text-xl md:font-bold">BDT</h3>
+            </div>
+    
+          </div>
         </nav>
-    </header>
+      </header>
     <main class="mt-8">
         <div class="w-10/12 mx-auto flex gap-7 mb-8">
-            <h6 class="text-4xl font-bold">Important FAQ</h6>
-            <i class="fa-regular fa-circle-question text-4xl"></i>
+            <h6 class="text-2xl md:text-4xl font-bold">Important FAQ</h6>
+            <i class="fa-regular fa-circle-question text-2xl md:text-4xl"></i>
         </div>
         <div class="join join-vertical w-10/12 mx-auto flex items-center">
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title md:*:text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
                     <p>The DOM is a map of a webpage that lets code interact with and change things like text,images, or buttons while the page is open.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-title md:text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
                     <p>To select an element from the DOM, by using methods like getElementById, getElementsByClassName, or querySelector.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is useful?</div>
+                <div class="collapse-title md:text-xl font-medium">What is event delegation in the context of the DOM, and why is useful?</div>
                 <div class="collapse-content">
                     <p>Event delegation lets you use one event listener on a parent element to handle events for all its child elements.It’s useful because it saves resources and works even for newly added elements.
                     </p>
@@ -74,7 +75,7 @@
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-title md:text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
                     <p>To manipulate an element's attributes and styles using the DOM, first select the element with a method like document.getElementById(). Then, change its attributes using setAttribute() or by directly modifying properties.To modify styles, access the style property and set values.This way, Can easily update the element's appearance and behavior!</p>
                 </div>
