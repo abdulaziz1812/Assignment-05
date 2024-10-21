@@ -1,15 +1,15 @@
-function showSectionById(id){
+function showSectionById(id) {
     document.getElementById('donation-section').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
 
-    document.getElementById(id).classList.remove('hidden')
+    document.getElementById(id).classList.remove('hidden');
 }
 
-function changeBtnColorById(id){
-    document.getElementById('btn-show-donation').classList.remove('bg-lime-300')
-    document.getElementById('btn-show-history').classList.remove('bg-lime-300')
+function changeBtnColorById(id) {
+    document.getElementById('btn-show-donation').classList.remove('bg-lime-300');
+    document.getElementById('btn-show-history').classList.remove('bg-lime-300');
 
-    document.getElementById(id).classList.add('bg-lime-300')
+    document.getElementById(id).classList.add('bg-lime-300');
 }
 
 // donation 
@@ -27,7 +27,7 @@ function textAmountToNumberById(id) {
 }
 
 // donation if section
-function donationBtnClick(donation,balance,cardBalance,titleChange,cardCurrentBalance){
+function donationBtnClick(donation, balance, cardBalance, titleChange, cardCurrentBalance, donationInput) {
     if (donation > balance || isNaN(donation) || donation <= 0 || donation === "") {
         alert('Invalid Donation Amount');
         return;
@@ -47,26 +47,28 @@ function donationBtnClick(donation,balance,cardBalance,titleChange,cardCurrentBa
         // history
         titleChange.innerText = titleChange.innerText.replace("Donate", "Donated");
         const newTitle = titleChange.innerText;
-        let quota ="";
-                
+        let quota = "";
 
-        if(!titleChange.innerText.includes("Donated")){
-            quota = "Donated for "
+
+        if (!titleChange.innerText.includes("Donated")) {
+            quota = "Donated for ";
         }
-        
+
         const newTransaction = document.createElement('p');
-        newTransaction.classList.add('border', 'p-8', 'rounded-xl')
+        newTransaction.classList.add('border', 'p-8', 'rounded-xl');
         const date = new Date();
-        
+
 
         newTransaction.innerHTML = `<strong>${donation} Taka is ${quota}${newTitle}</strong>
         <br>
         Date: ${date}`;
-        
-       
+
+
         document.getElementById('history-container').appendChild(newTransaction);
 
         titleChange.innerText = titleChange.innerText.replace("Donated", "Donate");
+
+        donationInput.value = "";
 
     }
 }
